@@ -16,5 +16,5 @@ A landing page for [the Odin Project](https://www.theodinproject.com/lessons/fou
 
 ## Preview
 
-![](readme-img/landing-page-1.jpg))
+![](readme-img/landing-page-1.jpg)
 ![](readme-img/landing-page-2.jpg)
