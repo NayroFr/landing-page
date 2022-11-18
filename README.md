@@ -10,9 +10,9 @@ A landing page for [the Odin Project](https://www.theodinproject.com/lessons/fou
 
 ## Image credits
 
-- [bridge]: (https://unsplash.com/photos/Ssr26I0QWVY)
+- [Bridge](https://unsplash.com/photos/Ssr26I0QWVY)
 
-- [Face] : (https://thispersondoesnotexist.com/)
+- [Face](https://thispersondoesnotexist.com/)
 
-![](/landing-page/readme-img/landing-page-1.png)
-![](/landing-page/readme-img/landing-page-2.png)
+![](readme-img/landing-page-1.png)
+![](readme-img/landing-page-2.png)
