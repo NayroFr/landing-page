@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
 
 $darkBackground: #1f2937;
 $h1Color: #f9faf8;
@@ -17,80 +17,218 @@ body {
   height: 100vh;
 }
 button {
-  background-color: $buttonColor;
+  background: $buttonColor;
   color: $secondaryColor;
   border: none;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1.6rem;
   cursor: pointer;
   outline: inherit;
-  border-radius: 0.2rem;
-  margin-top: 0.3rem;
+  border-radius: 0.3rem;
+  margin-top: 0.4rem;
+  &:hover {
+    outline: 2px solid white;
+  }
+}
+.head-width {
+  width: 70%;
+}
+.content-width {
+  width: 60%;
 }
 
 header {
-  background-color: $darkBackground;
+  background: $darkBackground;
   padding: 1rem 0 3rem;
   .nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin-bottom: 5rem;
-    .logo {
-      color: $h1Color;
-      min-width: 25vw;
-      flex-shrink: 0;
-    }
-    ul {
-      list-style: none;
+    nav {
       display: flex;
-      gap: 15px;
-      a {
-        text-decoration: none;
+      justify-content: space-between;
+      margin-bottom: 5rem;
+      .logo {
+        color: $h1Color;
+        min-width: 25vw;
+        flex-shrink: 0;
+        font-size: 1.33rem;
+        font-weight: 700;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        a {
+          text-decoration: none;
+          color: $secondaryColor;
+          font-size: 1rem;
+          &:hover {
+            color: $buttonColor;
+          }
+        }
+      }
+    }
+  }
+  .head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .head {
+      display: flex;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      .main-title-container {
+        min-width: 14rem;
+        max-width: 40%;
+        align-self: center;
+      }
+      h1 {
+        color: $h1Color;
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.125rem;
         color: $secondaryColor;
+      }
+      .header-img {
+        max-width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        align-self: center;
+        img {
+          max-width: 60%;
+          min-width: 20rem;
+          height: auto;
+          box-shadow: 8px 6px 17px 8px rgba(0, 0, 0, 0.3);
+        }
       }
     }
   }
 }
 
-.head-container {
+// !Main
+
+.container-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  .head {
+  text-align: center;
+  margin: 3rem 0 10rem;
+  .container-row {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin-bottom: 5rem;
-    .main-title-container {
-      max-width: 50%;
-    }
-    h1 {
-      color: $h1Color;
-      font-size: 3rem;
-    }
+    flex-flow: row nowrap;
+    gap: 10rem;
+  }
+}
+
+.container-column {
+  .random-information {
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    color: $h2Color;
+  }
+  .container-row.main-img {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .items {
+    max-width: 10rem;
     p {
-      font-size: 1.125rem;
-      color: $secondaryColor;
+      padding-top: 0.6rem;
+      font-weight: 300;
     }
-    .header-img {
-      max-width: 50%;
-      margin-left: auto;
-      list-style: none;
+  }
+  img {
+    max-width: 10rem;
+    // border: 2px solid $buttonColor;
+    border-radius: 1rem;
+    box-shadow: 9px 6px 4px -2px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.container-quote {
+  background: $secondaryColor;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .content-width {
+    q {
+      font-size: 2.25rem;
+      font-weight: 100;
+      font-style: italic;
+    }
+    cite {
       display: flex;
-      gap: 15px;
-      align-self: center;
-      img {
-        max-width: 20rem;
-        height: auto;
+      justify-content: flex-end;
+      padding-top: 1rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      font-style: normal;
+    }
+  }
+}
+
+.container-column.sign-up {
+  margin: 5rem 0;
+  .content-width.content-foot {
+    width: 50%;
+    .container-row.action {
+      background: $buttonColor;
+      padding: 2rem 1rem;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+      color: $secondaryColor;
+      border-radius: 0.5rem;
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-weight: 300;
+      }
+      button {
+        border: 2px solid white;
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $darkBackground;
+  color: $h1Color;
+  height: 5rem;
+  .github-svg {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0 0.2rem;
+    a {
+      text-decoration: none;
+      color: $buttonColor;
+      display: flex;
+      align-items: center;
+      gap: 0.2em;
+      path {
+        fill: $buttonColor;
+      }
+    }
+    &:hover {
+      a {
+        color: red;
+      }
+      path {
+        fill: red;
       }
     }
   }
