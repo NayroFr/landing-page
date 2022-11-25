@@ -1,5 +1,3 @@
-# landing-page
-
 ## About
 
 A landing page for [the Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page#assignment). The landing page use flex to display elements on the page.
