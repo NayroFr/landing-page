@@ -2,7 +2,7 @@
 
 ## About
 
-A landing page for [the Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page#assignment). The landing page utilizes flex to display elements on the page.
+A landing page for [the Odin Project](https://www.theodinproject.com/lessons/foundations-landing-page#assignment). The landing page use flex to display elements on the page.
 
 ## Live page
 
